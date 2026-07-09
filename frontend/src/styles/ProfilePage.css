@@ -1,0 +1,147 @@
+.profile-page {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 30px 20px 80px;
+}
+
+/* Empty state */
+.profile-empty {
+  text-align: center;
+  padding: 80px 20px;
+  max-width: 400px;
+  margin: 0 auto;
+}
+.profile-empty-icon { font-size: 72px; margin-bottom: 16px; }
+.profile-empty h2   { font-size: 22px; font-weight: 700; color: #fff; margin-bottom: 8px; }
+.profile-empty p    { font-size: 14px; color: #555; margin-bottom: 24px; }
+.profile-empty button {
+  background: #ff6b35; color: white; border: none;
+  padding: 13px 32px; border-radius: 10px;
+  font-size: 15px; font-weight: 700;
+  cursor: pointer; font-family: "Poppins", sans-serif;
+}
+
+/* Header */
+.profile-header {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+  background: #1a1a1a;
+  border: 1px solid #2a2a2a;
+  border-radius: 20px;
+  padding: 24px;
+  margin-bottom: 16px;
+}
+
+.profile-avatar {
+  width: 80px; height: 80px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #ff6b35, #f7451d);
+  display: flex; align-items: center; justify-content: center;
+  font-size: 32px; font-weight: 800; color: white;
+  flex-shrink: 0;
+  box-shadow: 0 4px 20px rgba(255,107,53,0.3);
+}
+
+.profile-info { flex: 1; }
+.profile-info h2 { font-size: 22px; font-weight: 800; color: #fff; margin-bottom: 4px; }
+.profile-info p  { font-size: 13px; color: #666; margin-bottom: 4px; }
+
+.edit-profile-btn {
+  background: transparent;
+  border: 1px solid #333;
+  color: #888;
+  padding: 6px 14px;
+  border-radius: 8px;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  font-family: "Poppins", sans-serif;
+  margin-top: 8px;
+  transition: all 0.2s;
+}
+.edit-profile-btn:hover { border-color: #ff6b35; color: #ff6b35; }
+
+/* Edit fields */
+.edit-fields { display: flex; flex-direction: column; gap: 10px; width: 100%; }
+.edit-input {
+  background: #111; border: 1px solid #333;
+  color: #fff; padding: 10px 14px;
+  border-radius: 8px; font-size: 14px;
+  font-family: "Poppins", sans-serif; outline: none;
+  transition: border-color 0.2s;
+}
+.edit-input:focus { border-color: #ff6b35; }
+.edit-actions { display: flex; gap: 10px; }
+.save-btn {
+  background: #ff6b35; color: white; border: none;
+  padding: 8px 20px; border-radius: 8px;
+  font-size: 13px; font-weight: 700;
+  cursor: pointer; font-family: "Poppins", sans-serif;
+}
+.cancel-btn {
+  background: transparent; color: #666;
+  border: 1px solid #333; padding: 8px 20px;
+  border-radius: 8px; font-size: 13px; font-weight: 700;
+  cursor: pointer; font-family: "Poppins", sans-serif;
+}
+
+/* Stats */
+.profile-stats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+  margin-bottom: 16px;
+}
+.profile-stat {
+  background: #1a1a1a;
+  border: 1px solid #2a2a2a;
+  border-radius: 14px;
+  padding: 16px 10px;
+  text-align: center;
+  display: flex; flex-direction: column; gap: 4px;
+  transition: border-color 0.2s;
+}
+.profile-stat:hover { border-color: #ff6b3560; }
+.stat-icon { font-size: 22px; }
+.stat-val  { font-size: 18px; font-weight: 800; color: #ff6b35; }
+.stat-lbl  { font-size: 10px; color: #555; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; }
+
+/* Menu */
+.profile-menu {
+  background: #1a1a1a;
+  border: 1px solid #2a2a2a;
+  border-radius: 16px;
+  overflow: hidden;
+  margin-bottom: 16px;
+}
+.profile-menu-item {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 16px 20px;
+  cursor: pointer;
+  border-bottom: 1px solid #222;
+  transition: background 0.2s;
+}
+.profile-menu-item:last-child { border-bottom: none; }
+.profile-menu-item:hover { background: #222; }
+.menu-item-icon  { font-size: 20px; width: 28px; text-align: center; flex-shrink: 0; }
+.menu-item-label { flex: 1; font-size: 14px; font-weight: 600; color: #ccc; }
+.menu-item-arrow { font-size: 20px; color: #444; }
+
+/* Logout */
+.logout-btn {
+  width: 100%;
+  background: #2a1a1a;
+  color: #ef4444;
+  border: 1px solid #ef444430;
+  padding: 15px;
+  border-radius: 12px;
+  font-size: 15px;
+  font-weight: 700;
+  cursor: pointer;
+  font-family: "Poppins", sans-serif;
+  transition: all 0.2s;
+}
+.logout-btn:hover { background: #ef444415; border-color: #ef4444; }

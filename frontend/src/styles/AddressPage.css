@@ -1,0 +1,115 @@
+.address-page {
+  max-width: 620px;
+  margin: 0 auto;
+  padding: 30px 20px 80px;
+}
+
+.address-header { margin-bottom: 24px; }
+.address-header h2 { font-size: 26px; font-weight: 800; color: #fff; }
+.address-header p  { font-size: 13px; color: #555; margin-top: 4px; }
+
+.address-list { display: flex; flex-direction: column; gap: 12px; margin-bottom: 16px; }
+
+.address-card {
+  background: #1a1a1a;
+  border: 1px solid #2a2a2a;
+  border-radius: 14px;
+  padding: 16px 18px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  transition: border-color 0.2s;
+}
+.address-card.default { border-color: #ff6b3560; }
+
+.addr-left { display: flex; align-items: flex-start; gap: 14px; flex: 1; }
+.addr-icon { font-size: 28px; flex-shrink: 0; }
+
+.addr-type-row { display: flex; align-items: center; gap: 8px; margin-bottom: 4px; }
+.addr-type { font-size: 14px; font-weight: 700; color: #fff; }
+.addr-default-badge {
+  background: #ff6b3520;
+  border: 1px solid #ff6b3540;
+  color: #ff8c5a;
+  font-size: 10px;
+  font-weight: 700;
+  padding: 2px 8px;
+  border-radius: 10px;
+}
+.addr-text { font-size: 12px; color: #666; line-height: 1.5; }
+
+.addr-actions { display: flex; align-items: center; gap: 8px; flex-shrink: 0; }
+.addr-btn {
+  background: transparent;
+  border: 1px solid #333;
+  border-radius: 8px;
+  font-size: 12px;
+  font-weight: 700;
+  cursor: pointer;
+  font-family: "Poppins", sans-serif;
+  padding: 6px 12px;
+  transition: all 0.2s;
+}
+.addr-btn.set-default { color: #ff6b35; border-color: #ff6b3540; }
+.addr-btn.set-default:hover { background: #ff6b3515; }
+.addr-btn.delete { color: #ef4444; border-color: #ef444430; padding: 6px 10px; }
+.addr-btn.delete:hover { background: #ef444415; }
+
+/* Add form */
+.add-addr-form {
+  background: #1a1a1a;
+  border: 1px solid #2a2a2a;
+  border-radius: 16px;
+  padding: 20px;
+}
+.add-addr-form h4 { font-size: 15px; font-weight: 700; color: #fff; margin-bottom: 16px; }
+
+.type-select { display: flex; gap: 10px; margin-bottom: 14px; }
+.type-btn {
+  background: #111; border: 1px solid #333; color: #666;
+  padding: 8px 16px; border-radius: 8px;
+  font-size: 13px; font-weight: 600;
+  cursor: pointer; font-family: "Poppins", sans-serif;
+  transition: all 0.2s;
+}
+.type-btn.active { background: #ff6b35; border-color: #ff6b35; color: white; }
+
+.addr-textarea {
+  width: 100%; background: #111; border: 1px solid #333;
+  color: #fff; padding: 12px 14px; border-radius: 10px;
+  font-size: 13px; font-family: "Poppins", sans-serif;
+  outline: none; resize: none; margin-bottom: 14px;
+  transition: border-color 0.2s; line-height: 1.6;
+}
+.addr-textarea:focus { border-color: #ff6b35; }
+
+.form-actions { display: flex; gap: 10px; }
+.save-addr-btn {
+  background: #ff6b35; color: white; border: none;
+  padding: 11px 24px; border-radius: 10px;
+  font-size: 14px; font-weight: 700;
+  cursor: pointer; font-family: "Poppins", sans-serif;
+}
+.cancel-addr-btn {
+  background: transparent; color: #666; border: 1px solid #333;
+  padding: 11px 20px; border-radius: 10px;
+  font-size: 14px; font-weight: 700;
+  cursor: pointer; font-family: "Poppins", sans-serif;
+}
+
+/* Add button */
+.add-addr-btn {
+  width: 100%;
+  background: transparent;
+  border: 2px dashed #333;
+  color: #555;
+  padding: 16px;
+  border-radius: 14px;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+  font-family: "Poppins", sans-serif;
+  transition: all 0.2s;
+}
+.add-addr-btn:hover { border-color: #ff6b35; color: #ff6b35; }
